@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Noise WordPress Theme Documentation</title>
+	<link href="http://fitwp.github.io/docs/style.css" rel="stylesheet">
+	<style>
+	#content { background: #f0f0f0; }
+	#content img { display: block; margin: 0 auto; }
+	</style>
+</head>
+<body>
+
+<div id="sidebar">
+	<h3 id="title">Noise WordPress Theme</h3>
+	<div id="toc"></div>
+</div>
+
+<div id="content">
+
+Welcome
+=======
+
+<div class="alert alert-success">**Welcome! First of all we want to thank you for purchasing our Noise WordPress Theme.**</div>
+
+In the following sections we will explain how to set up and use Noise theme the easiest way possible. Although there're a lot of things written in this documentation, the theme itself is not hard to use. You can go to the Theme Options page and explore everything yourself. This file is more of a reference if you do not know what to do, or if you are not familiar with WordPress.
+
+If you have any questions that are beyond the scope of this help file, please feel free to ask your questions at the [support forum](http://fitwp.com/envato-support/).
+
+Best regards
+
+
+
+
+Theme Information
+=================
+
+- **Theme Name:** Noise WordPress Theme
+- **Version:** 1.0
+- **Theme URL:** [http://fitwp.com/themes/noise/](http://fitwp.com/themes/noise/)
+- **Author:** FitWP
+- **Author Website:** [FitWP](http://fitwp.com)
+- **Support:** [http://fitwp.com/envato-support/](http://fitwp.com/envato-support/)
+
+
+
+
+Files Included
+==============
+
+The download package (`.zip`) that you get from ThemeForest contains the following files and folder:
+
+- `noise.zip`: main theme file that need to be uploaded to host to install Noise theme
+- `demo-content.xml`: demo content file, which contains all pages and posts from live preview website. It will help you to have a first look of how we use Noise theme
+- `docs.html`: Theme documentation (this file)
+
+
+
+
+Installation
+============
+
+
+Install theme
+-------------
+
+After you download the `.zip` package from ThemeForest, unzip it. You'll see a file `noise.zip`, which is the main file that needed to upload and install.
+
+You can either choose to upload and installl the theme using **FTP** or use **WordPress theme install** function.
+
+**Upload and install using FTP**
+
+- Unzip `noise.zip`, you'll get a folder `noise`
+- Use a FTP client like [FileZilla](http://filezilla-project.org/) and upload that folder to `wp-content/themes` folder on your host
+- Go to `Appearance > Themes` and activate **Noise** theme
+
+**Install theme using WordPress install function**
+
+- Go to `Appearance > Themes` and click **Add New**
+- Select **Upload**
+- Click **Browse** and select the `noise.zip` file
+- Click **Install Now**
+- When upload and installation progresses are completed, click **Activate**, or go to `Appearance > Themes` and activate **Noise** theme
+
+![upload](http://fitwp.github.io/docs/whisper/wordpress-upload.png)
+
+
+
+
+Install plugins
+---------------
+
+After installing Noise, you'll see a notification in the top of the page that says the theme needs some plugins to function properly.
+
+Noise theme **requires** the [Meta Box](http://wordpress.org/plugins/meta-box/) plugin (free and available on WordPress.org) and **recommends** [MailPoet Newsletters (formerly Wysija)](http://wordpress.org/plugins/wysija-newsletters/) (free and available on WordPress.org).
+
+Noise is working perfectly with these plugins. It automatically adds more styles to them to make the design match the theme.
+
+To install these plugins:
+
+- Click **Begin installing plugins**
+- You'll be redirect to a page where all needed plugins are listed. Just click on **Install** below each plugin's name
+- After installing, if it's required to activate the plugin, just activate
+
+![plugins](http://fitwp.github.io/docs/noise/install-plugins.png)
+
+
+
+
+Install demo content
+--------------------
+
+If you are new to WordPress and have problems with setting up the theme you might want to import the demo content file that comes with the theme. The following actions will import some dummy posts and pages from the live preview:
+
+- Go to `Tools > Import`
+- Select **WordPress** from the list
+- If you haven't installed the **WordPress import plugin**, a popup window will appears and ask you to install it. Just click **Install Now**. When the installation progress is completed, click **Activate Plugin & Run Importer**. If you have installed this plugin, skip to next step.
+- Click **Browse** and select `demo-content.xml` file from the download package
+- Click **Upload file and import**
+- When you are asked to import author, you can create new author or import to existing author. You also should check the checkbox **Download and import file attachments**.
+
+![import](http://fitwp.github.io/docs/whisper/import.png)
+
+After completing all above steps, go to `Tracks`, `Artists`, `Albums` to see imported data.
+
+
+
+
+Setup menu
+----------
+
+Because we haven't created a menu for primary location, the theme will display WordPress pages by default, which is not correct.
+
+Following these steps to assign a menu:
+
+
+TODO: Sua lai hinh
+![menu](http://fitwp.github.io/docs/whisper/menu.png)
+
+- Go to `Appearance > Menus`
+- Select an existing to edit, or click **create a new menu**. **Note:** when you import theme data, WordPress automatically create a menu **Main** for you, so select it if you want to have same menu as in live preview.
+- Select **Noise Sections** from the left meta box and click **Add to Menu**.
+- On the right, feel free to drag and drop menu items to organize them. This only affect menu items order, not the order of sections. To change order of sections, please see in *Theme Options**.
+- When you're done moving menu items, check **Primary Menu** for **theme locations** at the bottom of the page
+- Click **Save Menu**
+
+<div class="alert">If you use the imported menu (e.g. the **Main** menu which is automatically created), you have to **change the URL** of menu item. Currently they're pointed to section of demo website, and you have to change URL to your website.</div>
+
+TODO: chup hinh
+
+
+
+Setup widget areas
+------------------
+
+Noise theme has only 1 widget area (sidebar) for **Blog** page. By default, Noise works perfectly with all widgets, so you just need to drag and drop widgets from the left to the sidebar area. That's all.
+
+![sidebar](http://fitwp.github.io/docs/whisper/sidebar.png)
+
+To see options for each widgets, please read the **Widgets** section.
+
+That's all! Now you have the website up with all *basic* elements!
+
+
+
+
+Theme Options
+=============
+
+TODO: Change image
+
+![theme options](http://fitwp.github.io/docs/whisper/theme-options.png)
+
+The Noise theme comes with unique, creative and easy-to-use Theme Options page. You can change all theme options in one place!
+
+With Noise's advanced theme options panel, you can customize just about any part of your site quickly and easily. You can change options for each section on the site. Upload your own custom favicon, input custom CSS. Change title, subtitle for each section. Upload background for parallax effect, etc.
+
+All options have full description so you can know what you are doing. Just click and save!
+
+Let's go through each section.
+
+
+
+
+General
+-------
+
+TODO: doi hinh
+
+![general](http://fitwp.github.io/docs/whisper/general.png)
+
+This sections contains:
+
+- **(1)**: favicon upload, allows you to upload favicon for you website
+- **(2)**: touch icon, allows you to upload icon for mobile devices and tablets
+
+
+
+### Favicon Upload
+
+[Favicon](http://en.wikipedia.org/wiki/Favicon) (short for Favorite icon), also known as a shortcut icon, Web site icon, tab icon or bookmark icon, is a file containing one or more small icons, most commonly 16x16 pixels, associated with a particular Web site or Web page. Browsers that provide favicon support typically display a page's favicon in the browser's address bar (sometimes in the history as well) and next to the page's name in a list of bookmarks. Browsers that support a tabbed document interface typically show a page's favicon next to the page's title on the tab, and site-specific browsers use the favicon as a desktop icon.
+
+This is how favicon appears:
+
+![favicon](http://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wikipedia_favicon_in_Firefox_on_KDE.png/250px-Wikipedia_favicon_in_Firefox_on_KDE.png)
+
+Noise lets you upload favicon or enter favicon URL in the input box:
+
+- If you have a favicon uploaded, or you store the favicon somewhere out of the Media Library, you can just **put the URL of the favicon into the input box**, or
+- If you want to upload favicon for your website, **click the upload button** (the green one near input box) and upload it to Media Library as a normal image, then click **Select**.
+
+<div class="alert">The favicon should be in one of the following format: `.ico`, `.png`, `.gif`. Usually we should use `.ico`.</div>
+
+When you're done, you can click **Save Changes** button to save your data.
+
+
+
+### Touch Icon
+
+Touch icons are the favicons of mobile devices and tablets. Each mobile devices and tablets has its own standards for displaying the touch icon (read [this article](http://mathiasbynens.be/notes/touch-icons) to have a better understanding about touch icon and supported devices) and requires various icon sizes. But for best compatibility and simplicity, an **image with size 152x152 is enough**.
+
+To specify a touch icon for you website, just do the same as for favicon: you can either put the URL of the touch icon into the input box or upload the icon to Media Library.
+
+<div class="alert">The icon must be an PNG image</div>
+
+When you're done, you can click **Save Changes** button to save your data.
+
+
+
+
+Design
+------
+
+This sections contains:
+
+- **Background**: allows you to select background pattern or image, and change how it appear
+- **Custom CSS**: allows you to add your custom CSS
+
+
+
+
+### Background
+
+This section help you to select background pattern or image, and change how it appear.
+
+<div class="alert">All the background options are applied **only in boxed layout** (we'll reveal how to change boxed or wide layout in the next section).</div>
+
+![background](http://fitwp.github.io/docs/whisper/background.png)
+
+**(1)**: select background pattern (background image). Noise has **5 predefined background patterns** for you to select from. These patterns are handy picked and match the theme design. If you don't have a background image, you can use one of them.
+
+**(2)**: background color. If you don't want to use an image for background, you can set background as a solid color. You can also do this if you have a background image with some transparent parts and you want to fill those parts with a solid color.
+
+**(3)**: background image. This is similar to the **(1)** option, but here you specify you own background image. You can paste image URL here or upload the image to Media Library by clicking the upload button (the green one).
+
+<div class="alert alert-success">**Tips**: A lot of background patterns can be found at [Subtle Patterns](http://subtlepatterns.com/).</div>
+
+**(4)**: background position X, can be `Left`, `Center` or `Right`.
+
+**(5)**: background position Y, can be `Top`, `Center` or `Bottom`.
+
+**(6)**: background repeat, can be `Repeat`, `Repeat Horizontally`, `Repeat Vertically` or `No Repeat`
+
+**(7)**: background attachment, can be `Scroll` (will scroll when you scroll the content) or `Fixed` (will stay fixed when you scroll the content)
+
+After done, click **Save Changes** button to save your data. Now go to the frontend and check the background.
+
+<div class="alert alert-info">The options 4-7 are similar to CSS properties for background and a little technical. If you don't understand what they mean, just change the values, save and preview changes!</div>
+
+
+
+
+Header
+------
+
+![header](http://fitwp.github.io/docs/whisper/header.png)
+
+This sections contains:
+
+**(1)**: logo upload, allows you to upload logo for you website. You can either put the URL of the logo into the input box or upload the logo to Media Library. The live preview of the logo will appear below the inputs.
+
+**(2)**: logo size. Specify logo size in **px** here. It will help you resize the logo to correct dimensions. By default, the good size is **201x39**.
+
+<div class="alert alert-info">You should **resize the logo to correct size** in Photoshop or any image editor before upload. It will keep your logo not resized and small size.</div>
+
+**(3)**: header scripts. Enter scripts or code you would like output to `&lt;head&gt;`. It can be:
+
+- `<link>` tag for custom font (from Google Fonts maybe)
+- Any meta tag: to show the designer, copyright, etc. in meta tag
+- Google Analytics code
+- Any Javascript code that need to be execute in `&lt;head&gt;`
+- Anything else
+
+<div class="alert alert-error">If you want to put custom CSS here, you're doing **wrong**. There's a section for **Custom CSS** under **Design**, use it instead.</div>
+
+
+
+TODO: Bo sung cac section
+
+
+Blog
+----
+
+
+
+
+
+Footer
+------
+
+
+**(4)**: footer scripts. Enter scripts or code you would like output before `&lt;/body&gt;`. It can be Google Analytics code or any Javascript code.
+
+
+
+
+Backup - Restore
+----------------
+
+Noise allows you to backup Noise options and restore them later. You can also transfer the saved options data between different installs.
+
+To backup theme options, just copy the text inside the text box and save it into a file on your computer. To import data, replace the data in the text box with the one from the saved file and click **Import Options** button.
+
+After clicking **Import Options**, Noise will automatically setup all options and refresh the current theme options page, so you can see the options immediately.
+
+
+
+
+
+Add/Edit Portfolio
+==============
+
+When you add or edit a portfolio, you need to fill in some required information to make it displays correctly. Look at 3 meta boxes:
+
+- **Portfolio Settings**: portfolio main information
+- **Portfolio Categories**: portfolio categories
+- **Featured Image**: portfolio featured image
+
+![portfolio](http://fitwp.github.io/docs/whisper/portfolio.png)
+
+In the **(1)** meta box, you have to:
+
+- Select which type of display the portfolio will be. See how they're different here: [default](http://themes.fitwp.com/noise/portfolio/creativity-in-numbers/) and [simple](http://themes.fitwp.com/noise/portfolio/light-house/).
+- Select or upload portfolio images, these images will be used in the portfolio slider
+- Project URL
+- Testimonial: required only if you select display type `simple`.
+- Testimonial Author: required only if you select display type `simple`.
+
+In the **(2)** meta box, you can select or create new categories for portfolio. Note that the categories will be used to **filter** portfolios in **Portfolios** archive page (e.g. page with template **Portfolios** or **Portfolios Hexagon**).
+
+In the **(3)** meta box, simply select featured image for the portfolio as a normal post. You can choose the same image that you have uploaded in **(1)** meta box or a new one. This image will be used to display as portfolio thumbnail.
+
+
+
+
+Page Templates
+==============
+
+Noise has one build-in page template for **Blog** that displays blog posts.
+
+When you edit a page, look at on the right, find **Page Attributes** meta box and select a template from the dropdown **Template**:
+
+![page-templates](http://fitwp.github.io/docs/whisper/page-templates.png)
+
+View the page to see result!
+
+
+
+
+Widgets
+=======
+
+Noise plays nicely with default WordPress widgets. Besides that the theme has some additional widgets that might be useful for you:
+
+
+
+
+Noise - Tweets
+----------------
+
+Before you use the Tweets widget, you have to create a Twitter app. Following these steps:
+
+- Go to [https://dev.twitter.com/apps](https://dev.twitter.com/apps) and click **Create a new application** button.
+
+![twitter-app](http://fitwp.github.io/docs/whisper/twitter-app.png)
+
+- Fill in all information needed for the app. The name and description can be anything, it does not have to be a certain name. You can leave the Callback URL field empty.
+- After creating the app, click **Create My Access Token** button to generate the necessary codes.
+- Now go to app Dashboard and selec **OAuth tool** tab and copy the following fields:
+	+ Consumer key
+	+ Consumer secret
+	+ Access token
+	+ Access token secret
+
+These fields will be used in the tweets widget.
+
+Now go to your website admin area, then `Appearance > Widgets`, drag and drop **Noise - Tweets** widget into a sidebar that you want it to show there. You'll see these fields like this:
+
+![tweets](http://fitwp.github.io/docs/whisper/tweets.png)
+
+You also need to enter **Cache time** (2) - which is the time your tweets will be temporarily stored in WordPress cache, **Twitter username** (3) and **Number of tweets** (4).
+
+After filling all information, just click **Save**.
+
+
+
+Noise - Recent Posts
+----------------------
+
+This widgets replaces default WordPress recent posts widget. It displays recent posts in much more beautiful way and gives
+you more control to what will be shown.
+
+The widget has the following options:
+
+- **Title**: widget title
+- **Number Of Posts**: how many posts you want to displayed
+- **Category**: you can choose to display posts from all categories, or a specific category or multiple categories
+- **Show Comment Number**: whether or not show comment number
+- **Show Thumbnail**: whether or not show thumbnail
+- **Default Thumbnail**: if post doesn't have thumbnail, this default thumbnail will be used
+- **Show Date**: whether or not show post date
+- **Date Format**: date format. [See this link](http://codex.wordpress.org/Formatting_Date_and_Time) for a full list of supported date formats
+- **Show Excerpt**: whether or not show post excerpt
+- **Excerpt Length**: the number of words of post content will be displayed
+- **Show Readmore Text**: whether or not show read more text
+- **Readmore Text**: Read more text
+
+
+
+Noise - Tabs
+----------------------
+
+This widgets displays popular posts, recent posts and recent comments in a tabbed widget. Each tab has its own options. For popular posts and recent posts, the options are similar to the Recent Posts widget above.
+
+Note that popular posts is counted based on number of comments.
+
+
+
+
+Credits
+=======
+
+1. FlexSlider
+1. Colorbox
+1. Google Fonts
+1. HTML5shiv
+
+</div><!-- #content -->
+
+<script src="http://fitwp.github.io/docs/script.js"></script>
+</body>
+</html>
