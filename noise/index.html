@@ -358,7 +358,7 @@ This is the configuration for the top slider. Note that the theme slides **text 
 
 This section has the following options:
 
-- **(1)**: enable/disable opener. If you don't like the slider at all, you can disable it here.
+- **(1)**: enable/disable slider. If you don't like the slider at all, you can disable it here.
 - **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
 - **(3)**: slider 1's caption text. There're maximum 5 slides in this slider (more slides isn't good for user experience). You just need to enter texts for slides you want to show. For example, if you enter only 3 texts, the slider will shows only 3 slides.
 
@@ -371,10 +371,196 @@ This section has the following options:
 
 This section allows you to display **all** tracks of your website in a vertical slider.In the frontend you can scroll vertically to see all tracks. The configuration of this section is very simple:
 
-- **(1)**: enable/disable opener. If you don't like the latest tracks section at all, you can disable it here.
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
 - **(2)**: section title.
 - **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
 - **(4)**: subtitle.
+
+
+
+### Like & Follow
+
+![like](http://fitwp.github.io/docs/noise/like.png)
+
+This section displays beautiful Facebook like and Twitter follow button in the frontend. It has the following options:
+
+- **(1)**: enable/disable the section. If you don't like this section to be shown, you can disable it here.
+- **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
+- **(3)**: message. This is the text that tells peole to like/follow you. You can put text in multiple lines, which will be displayed the same in the frontend.
+- **(4)**: Facebook App ID. Noise use a custom Facebook like button, which requires a Facebook app to work on. You have to enter the Facebook app ID here. Please follow [this tutorial](http://tri.be/how-to-create-a-facebook-app-id/) to know steps to create a Facebook app and get its ID.
+- **(5)**: Twitter username. Twitter is more easier than Facebook, you just need to put your Twitter username here.
+
+
+
+
+### Popular
+
+![popular](http://fitwp.github.io/docs/noise/popular.png)
+
+This section displays popular tracks (based on votes) in the latest week and in the latest month. The options for this section is very simple:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: section title.
+- **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
+- **(4)**: subtitle.
+
+Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+
+
+
+### Testimonials
+
+![testimonials](http://fitwp.github.io/docs/noise/testimonials.png)
+
+This section allows you to display maximum 5 testimonials in the frontend. It has the following options:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
+- **(3)**: testimonial author name
+- **(4)**: testimonial content
+
+The (3) and (4) is repeated the same for all testimonials.
+
+
+
+
+### Gallery
+
+![gallery](http://fitwp.github.io/docs/noise/gallery.png)
+
+This section displays photo and video galleries in the latest month. The options for this section is very simple:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: section title.
+- **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
+- **(4)**: subtitle.
+
+Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+
+
+
+
+### Tweets
+
+![tweets](http://fitwp.github.io/docs/noise/tweets.png)
+
+This sections display latest tweets in the frontend. It has the following options:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
+- **(3)**: API keys from Twitter App. Please read below to know it.
+- **(4)**: Twitter username
+- **(5)**: number of tweets to displayed
+- **(6)**: cache time (in seconds). Twitter limits number of requests to retrieve tweets in short time. To make sure we always get tweets, Noise has a feature that store tweets in local cache, which will reduce the chance of blocking by Twitter and also improve web performance.
+
+Before you use the Tweets section, you have to create a Twitter app. Following these steps:
+
+- Go to [https://dev.twitter.com/apps](https://dev.twitter.com/apps) and click **Create a new application** button.
+
+![twitter-app](http://fitwp.github.io/docs/whisper/twitter-app.png)
+
+- Fill in all information needed for the app. The name and description can be anything, it does not have to be a certain name. You can leave the Callback URL field empty.
+- After creating the app, click **Create My Access Token** button to generate the necessary codes.
+- Now go to app Dashboard and selec **API Keys** tab and copy the following fields:
+	+ Consumer key
+	+ Consumer secret
+	+ Access token
+	+ Access token secret
+
+These are needed fields in theme options we've just talked about.
+
+
+
+### Releases
+
+![release](http://fitwp.github.io/docs/noise/release.png)
+
+This section displays latest releases (album) in the latest month. The options for this section is very simple:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: section title.
+- **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
+- **(4)**: subtitle.
+
+Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+
+
+
+### Subscribe
+
+![subscribe](http://fitwp.github.io/docs/noise/subscribe.png)
+
+This section displays a subscribe to newsletter form. The form itself is created by another plugin. We recommended **Send Poet** (formly WYSIJA) plugin, which you should installed in the beginning of this documentation. But you can use any other plugin which support **shortcode** like Gravity Forms.
+
+This section has the following options:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
+- **(3)**: form shortcode. Just paste the shortcode from the plugin here.
+- **(4)**: form title.
+- **(5)**: form description.
+
+
+
+
+### Events
+
+![events](http://fitwp.github.io/docs/noise/events.png)
+
+This section displays upcoming and past events in the frontend. The options for this section is very simple:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: section title.
+- **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
+- **(4)**: subtitle.
+
+Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+
+
+
+
+### Countdown
+
+![countdown](http://fitwp.github.io/docs/noise/countdown.png)
+
+This section displays an important event with countdown style in the frontend. It has the following options:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
+- **(3)**: event title.
+- **(4)**: event description.
+- **(5)**: event time. You have to enter correct format of the date time: `yyyy-mm-dd h:i:s`
+
+
+
+
+### Artists
+
+![artists](http://fitwp.github.io/docs/noise/artists.png)
+
+This section displays all artists in a vertical slider in the frontend. The options for this section is very simple:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: section title.
+- **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
+- **(4)**: subtitle.
+
+Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+
+
+
+### Connect
+
+![connect](http://fitwp.github.io/docs/noise/connect.png)
+
+This section displays a Google Maps and links to your social profiles in the frontent. It has the following options:
+
+- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
+- **(3)**: title for the section. This title will have a special effect (push up) when you hover the Google Maps.
+- **(4)**: your address. This address will be used to displayed Google Maps.
+- **(5)**: zoom level for Google Maps.
+- **(6)**: list of links to your social profiles
 
 
 
