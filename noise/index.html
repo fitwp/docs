@@ -32,15 +32,24 @@ Best regards
 
 
 
+Resources
+=========
+
+- **Online Documentation:** (this file) http://fitwp.github.io/docs/noise/
+- **Video Tutorials:** http://vimeo.com/album/2743244
+- **Support Forum:** http://fitwp.com/envato-support/
+
+
+
+
 Theme Information
 =================
 
 - **Theme Name:** Noise WordPress Theme
 - **Version:** 1.0
-- **Theme URL:** [http://fitwp.com/themes/noise/](http://fitwp.com/themes/noise/)
+- **Theme URL:** http://fitwp.com/themes/noise/
 - **Author:** FitWP
-- **Author Website:** [FitWP](http://fitwp.com)
-- **Support:** [http://fitwp.com/envato-support/](http://fitwp.com/envato-support/)
+- **Author Website:** http://fitwp.com
 
 
 
@@ -190,10 +199,11 @@ General
 
 This sections contains:
 
-- **(1)**: favicon upload, allows you to upload favicon for you website
-- **(2)**: touch icon, allows you to upload icon for mobile devices and tablets
+- **(1)**: autoplay, allow the player auto plays music when website is loaded
+- **(2)**: favicon upload, allows you to upload favicon for you website
+- **(3)**: touch icon, allows you to upload icon for mobile devices and tablets
 
-After changing favicon and touch icon, click **(3)** to save changes.
+After changing favicon and touch icon, click **Save Changes**.
 
 
 
@@ -244,29 +254,38 @@ This sections contains:
 
 This section help you to select background pattern or image, and change how it appear.
 
-<div class="alert">All the background options are applied **only in boxed layout** (we'll reveal how to change boxed or wide layout in the next section).</div>
+![background](http://fitwp.github.io/docs/noise/background.png)
 
-![background](http://fitwp.github.io/docs/whisper/background.png)
+**(1)**: background color.
 
-**(1)**: select background pattern (background image). Noise has **5 predefined background patterns** for you to select from. These patterns are handy picked and match the theme design. If you don't have a background image, you can use one of them.
+**(2)**: background image. You can paste image URL here or upload the image to Media Library by clicking the upload button (the green one).
 
-**(2)**: background color. If you don't want to use an image for background, you can set background as a solid color. You can also do this if you have a background image with some transparent parts and you want to fill those parts with a solid color.
+**(3)**: background position X, can be `Left`, `Center` or `Right`.
 
-**(3)**: background image. This is similar to the **(1)** option, but here you specify you own background image. You can paste image URL here or upload the image to Media Library by clicking the upload button (the green one).
+**(4)**: background position Y, can be `Top`, `Center` or `Bottom`.
+
+**(5)**: background repeat, can be `Repeat`, `Repeat Horizontally`, `Repeat Vertically` or `No Repeat`
+
+**(6)**: background attachment, can be `Scroll` (will scroll when you scroll the content) or `Fixed` (will stay fixed when you scroll the content)
+
+**(7)**: parallax pattern. This is used as an **overlay** of background image. It's for better eye catching effect. You can leave it empty if you don't like the effect.
 
 <div class="alert alert-success">**Tips**: A lot of background patterns can be found at [Subtle Patterns](http://subtlepatterns.com/).</div>
 
-**(4)**: background position X, can be `Left`, `Center` or `Right`.
-
-**(5)**: background position Y, can be `Top`, `Center` or `Bottom`.
-
-**(6)**: background repeat, can be `Repeat`, `Repeat Horizontally`, `Repeat Vertically` or `No Repeat`
-
-**(7)**: background attachment, can be `Scroll` (will scroll when you scroll the content) or `Fixed` (will stay fixed when you scroll the content)
-
 After done, click **Save Changes** button to save your data. Now go to the frontend and check the background.
 
-<div class="alert alert-info">The options 4-7 are similar to CSS properties for background and a little technical. If you don't understand what they mean, just change the values, save and preview changes!</div>
+<div class="alert alert-info">The options 3-6 are similar to CSS properties for background and a little technical. If you don't understand what they mean, just change the values, save and preview changes!</div>
+
+
+
+
+### Custom CSS
+
+![custom css](http://fitwp.github.io/docs/noise/custom-css.png)
+
+This section allows to enter custom CSS that will be output in the `</head>`. This will **overwrite** CSS of theme, so please be careful!
+
+Custom CSS is useful when you want to adjust **small things** for your website. If you have to adjust a lot of things in website, please use [Child Themes](http://codex.wordpress.org/Child_Themes).
 
 
 
@@ -274,13 +293,13 @@ After done, click **Save Changes** button to save your data. Now go to the front
 Header
 ------
 
-![header](http://fitwp.github.io/docs/whisper/header.png)
+![header](http://fitwp.github.io/docs/noise/header.png)
 
 This sections contains:
 
 **(1)**: logo upload, allows you to upload logo for you website. You can either put the URL of the logo into the input box or upload the logo to Media Library. The live preview of the logo will appear below the inputs.
 
-**(2)**: logo size. Specify logo size in **px** here. It will help you resize the logo to correct dimensions. By default, the good size is **201x39**.
+**(2)**: logo size. Specify logo size in **px** here. It will help you resize the logo to correct dimensions. By default, the good size is **200x40**.
 
 <div class="alert alert-info">You should **resize the logo to correct size** in Photoshop or any image editor before upload. It will keep your logo not resized and small size.</div>
 
@@ -296,7 +315,67 @@ This sections contains:
 
 
 
-TODO: Bo sung cac section
+
+
+Sections
+--------
+
+This menu will let you reorder sections of Noise, as well as configure each section. Let's go to each submenu to see how it works.
+
+
+
+
+### Order Sections
+
+![order](http://fitwp.github.io/docs/noise/order.png)
+
+Here you can look at all sections available for Noise. You can drag and drop each section to reorder them as you want.
+
+<div class="alert">Note that you cannot disable sections here. Only reorder. Enable/disable sections will be different options in each section settings.</div>
+
+
+
+### Opener
+
+![opener](http://fitwp.github.io/docs/noise/opener.png)
+
+Opener is the screen you see when the preloader finished (100%). It mimics the "Slide to Unlock" effect on iOS. This part allows you to configure the opener with the following options:
+
+- **(1)**: enable/disable opener. If you don't like the opener at all, you can disable it here. **Note** the opener is shown only once when users first go to website, e.g. they don't have to "unlock" when they go throught all pages on the website.
+- **(2)**: opener logo. This option allows you to select logo for opener page. You can paste image URL here or upload it by clicking the green button.
+- **(3)**: unlock text. Put the text "Slide to Unlock" here.
+- **(4)**: background image. You can paste image URL here or upload it by clicking the green button.
+
+
+
+
+### Slider
+
+TODO: doi hinh vi thua option!
+![slider](http://fitwp.github.io/docs/noise/slider.png)
+
+This is the configuration for the top slider. Note that the theme slides **text only**, not images. When you click on arrows of the slider, only texts are changed.
+
+This section has the following options:
+
+- **(1)**: enable/disable opener. If you don't like the slider at all, you can disable it here.
+- **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
+- **(3)**: slider 1's caption text. There're maximum 5 slides in this slider (more slides isn't good for user experience). You just need to enter texts for slides you want to show. For example, if you enter only 3 texts, the slider will shows only 3 slides.
+
+
+
+
+### Latest Tracks
+
+![latest](http://fitwp.github.io/docs/noise/latest.png)
+
+This section allows you to display **all** tracks of your website in a vertical slider.In the frontend you can scroll vertically to see all tracks. The configuration of this section is very simple:
+
+- **(1)**: enable/disable opener. If you don't like the latest tracks section at all, you can disable it here.
+- **(2)**: section title.
+- **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
+- **(4)**: subtitle.
+
 
 
 Blog
