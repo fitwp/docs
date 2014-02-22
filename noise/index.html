@@ -564,16 +564,51 @@ This section displays a Google Maps and links to your social profiles in the fro
 
 
 
+
 Blog
 ----
 
+![blog](http://fitwp.github.io/docs/noise/blog.png)
 
+This part will show you all options for your blog. Although Noise is an "one-page" theme, you still can create multi-page for your website. Blog is one of that "multi-page".
+
+This section has following options:
+
+- **(1)**: blog layout. Noise supports 2 layout: left sidebar and right sidebar
+- **(2)**: enable/disable blog header. Blog header here is similar to the Top Slider, it will have same background, but only 1 caption text. By choosing enable, you'll show the blog header in Blog page, disable - hide blog header.
+- **(3)**: blog header caption.
+- **(4)**: except length for blog posts.
+- **(5)**: show/hide read more text.
+- **(6)**: the read more text
+- **(7)**: pagination style. Noise supports 3 pagination style: Ajax load (click on the button in the bottom of Blog page will load more posts via ajax), Next/Prev (go to next/prev pages), Numeric Buttons (display pages 1, 2, 3, ...)
 
 
 
 Footer
 ------
 
+![footer](http://fitwp.github.io/docs/noise/footer.png)
+
+This is the configuration part for footer. It has only 2 options:
+
+**(1)**: copyright text. You can enter text, HTML and **shortcodes** here. To make you easier to display copyright text, Noise has default shortcodes that you can enter here:
+
+- `[year]`: display current year
+- `[site_link]`: display link to your website with text is the website title. For example, if you have a website at `http://example.com` and title `Example`, this will display a link like this:
+
+```html
+<a href="http://example.com">Example</a>
+```
+
+- `[bloginfo]`: display blog information. This is the wrapper of [`bloginfo()`](http://look4wp.com/bloginfo) function. Default it will display blog name (e.g. website title), but you can use it with parameter `name` to display more information, for example:
+	+ `[bloginfo name="name"]`: display blog name (default)
+	+ `[bloginfo name="description"]`: display blog description (tagline)
+	+ `[bloginfo name="version"]`: display WordPress version
+	+ `[bloginfo name="rss2_url"]`: display RSS2 feed link
+	+ `[bloginfo name="home"]`: display home link
+	+ For more value of `name`, please see [`bloginfo()`](http://look4wp.com/bloginfo) function
+
+The default value for copyright text is **Copyright &copy;`[year]` `[site_link]`. All rights reserved.**.
 
 **(4)**: footer scripts. Enter scripts or code you would like output before `&lt;/body&gt;`. It can be Google Analytics code or any Javascript code.
 
