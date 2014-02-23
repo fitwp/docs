@@ -628,28 +628,154 @@ After clicking **Import Options**, Noise will automatically setup all options an
 
 
 
-Add/Edit Portfolio
+Add/Edit Album
 ==============
 
-When you add or edit a portfolio, you need to fill in some required information to make it displays correctly. Look at 3 meta boxes:
+Noise has some custom post types, one of them is "Album". When you add or edit an album, you need to fill in some required information to make it displays correctly. Look at 2 meta boxes:
 
-- **Portfolio Settings**: portfolio main information
-- **Portfolio Categories**: portfolio categories
-- **Featured Image**: portfolio featured image
+- **Album Information**: album main information
+- **Featured Image**: album featured image
 
-![portfolio](http://fitwp.github.io/docs/whisper/portfolio.png)
+![album](http://fitwp.github.io/docs/noise/album.png)
 
-In the **(1)** meta box, you have to:
+Let's go through each items:
 
-- Select which type of display the portfolio will be. See how they're different here: [default](http://themes.fitwp.com/noise/portfolio/creativity-in-numbers/) and [simple](http://themes.fitwp.com/noise/portfolio/light-house/).
-- Select or upload portfolio images, these images will be used in the portfolio slider
-- Project URL
-- Testimonial: required only if you select display type `simple`.
-- Testimonial Author: required only if you select display type `simple`.
+- **(1)**: album released date. When click on that field, you'll see a popup that show date picker, just pick one date.
+- **(2)**: composer name.
+- **(3)**: album genre.
+- **(4)**: iTunes link of the album, in case you want to sell it on iTunes. Leave empty if you don't want people to go to iTunes and buy it.
+- **(5)**: Amazon link of the album, in case you want to sell it on Amazon. Leave empty if you don't want people to go to Amazon and buy it.
+- **(6)**: Spotify link of the album, in case you want to sell it on Spotify. Leave empty if you don't want people to go to Spotify and buy it.
+- **(7)**: album review. Maybe a short review of the album, how is it, etc.
+- **(8)**: album featured image (cover image). Simply select featured image for the album as a normal post. This image will be used to display as album thumbnail.
 
-In the **(2)** meta box, you can select or create new categories for portfolio. Note that the categories will be used to **filter** portfolios in **Portfolios** archive page (e.g. page with template **Portfolios** or **Portfolios Hexagon**).
 
-In the **(3)** meta box, simply select featured image for the portfolio as a normal post. You can choose the same image that you have uploaded in **(1)** meta box or a new one. This image will be used to display as portfolio thumbnail.
+
+
+Add/Edit Artist
+===============
+
+Another post type that Noise has is "Artist". When you add or edit an artist, you need to fill in some required information to make it displays correctly. Look at 2 meta boxes:
+
+- **Artist Information**: artist main information
+- **Featured Image**: artist featured image
+
+![artist](http://fitwp.github.io/docs/noise/artist.png)
+
+Let's go through each items:
+
+- **(1)**: artist's full name.
+- **(2)**: artist's nick name.
+- **(3)**: date of birth. Just click on the text box, a date picker will be shown and you just need to select a date.
+- **(4)**: place of birth
+- **(5)**: occupation, like: singler, musician, etc.
+- **(6)**: what's the artist best known for? You should put a paragraph here that highlights artist's career.
+- **(7)**: synopsis. A paragraph for short introduction to artist.
+- **(8)-(12)**: link to artist's social profiles.
+- **(13)**: artist's images (gallery). You just need to click the button **Select or Upload Images**, a modal window will display. There you can upload artist's images or choose images from the Media Library. When uploaded, you can drag images to reorder them. These images will be display in a lightbox window in the frontend.
+- **(14)**: artist's featured image. Simply select featured image for the artist as a normal post. This image will be used to display as a thumbnail in the frontend.
+
+
+
+
+Add/Edit Track
+==============
+
+"Track" is main post type in Noise. When you add or edit an track, you need to fill in some required information to make it displays correctly. Look at 2 meta boxes:
+
+- **Track Information**: track main information
+- **Featured Image**: track featured image
+
+![track](http://fitwp.github.io/docs/noise/track.png)
+
+Let's go through each items:
+
+- **(1)**: track description.
+- **(2)**: track album. You just need to select album from the dropdown. Note that you have to create albums first.
+- **(3)**: artist. Same here, you just need to select artist from the dropdown. Note that you have to create artists first.
+- **(4)**: composer.
+- **(5)**: track release date. Simply click on the text box, a date picker will be shown. You just need to select a date.
+- **(6)**: track genre.
+- **(7)**: track length.
+- **(8)**: track upload. This is the **hotlink** (direct link) to the track. You can enter URL of the track here ot click on the button to upload track to Media Library. Note: you **must** provide direct link to the track for the player to play it in the frontend.
+- **(9)**: SoundCloud URL of the track. If you upload track to SoundCloud, you can enter its URL here so people can play the song at SoundCloud right in your website using SoundCloud player.
+- **(10)**: track lyrics.
+- **(11)**: track images (gallery). You just need to click the button **Select or Upload Images**, a modal window will display. There you can upload track images or choose images from the Media Library. When uploaded, you can drag images to reorder them. These images will be display in a lightbox window in the frontend.
+- **(12)**: track videos. If the track has videos (like live show videos, etc.), you can put video URLs here. Videos can be Youtube videos, Vimeo videos or self-hosted videos. For self-hosted videos, please click the "Upload" button to upload videos to Media Library. You can also add as many videos as you want by clicking the "+" button.
+- **(13)**: track featured image. Simply select featured image for the track as a normal post. This image will be used to display as a thumbnail in the frontend.
+
+
+
+
+Add/Edit Gallery
+================
+
+Noise allows you to show your photo gallery or video gallery. When you add or edit a gallery, you'll see the following options:
+
+![gallery](http://fitwp.github.io/docs/noise/gallery-edit.png)
+
+- **(1)**: gallery type: 'Photos' or 'Videos'. If you choose 'Photos', then you have to uploads images, otherwise, you have to upload videos.
+- **(2)**: gallery images. Click the button **Select or Upload Images**, a modal window will display. There you can upload images or choose images from the Media Library. Note: you only to do this if you choose gallery type 'Photos'.
+- **(3)**: gallery videos. If you choose gallery type 'Video', you can put video URLs here. Videos can be Youtube videos, Vimeo videos or self-hosted videos. For self-hosted videos, please click the "Upload" button to upload videos to Media Library. You can also add as many videos as you want by clicking the "+" button.
+- **(4)**: gallery featured image. Simply select featured image for the gallery as a normal post. This image will be used to display as a thumbnail in the frontend.
+
+
+
+
+Add/Edit Event
+==============
+
+Noise allows artists/singles to put their events on the website so fans can see and buy tickets. When you add or edit an event, please fill in the information below:
+
+![event](http://fitwp.github.io/docs/noise/event.png)
+
+- **(1)**: event date/time. Simply click on the text box, a date/time picker will popup and you just need to select correct date and time.
+- **(2)**: event information (description).
+- **(3)**: place of the event.
+- **(4)**: event status. This can be "Cancel", "Sold Out", "Buy" and often used for tickets.
+- **(5)**: buy link. If you choose event status "Buy", please enter the link to buy page here.
+- **(6)**: event images. Click the button **Select or Upload Images**, a modal window will display. There you can upload images or choose images from the Media Library.
+- **(7)**: event videos. You can put video URLs here. Videos can be Youtube videos, Vimeo videos or self-hosted videos. For self-hosted videos, please click the "Upload" button to upload videos to Media Library. You can also add as many videos as you want by clicking the "+" button.
+
+
+
+
+
+Post Formats
+============
+
+[Post Formats](http://codex.wordpress.org/Post_Formats) is theme feature which is a piece of meta information that can be used by a theme to customize its presentation of a post.
+
+In short, with a theme that supports Post Formats, a blogger can change how each post looks by choosing a Post Format from a radio-button list.
+
+Noise theme supports the following post formats:
+
+- `gallery` - A gallery of images, which will be displayed in a responsive image slider, powered by Flexslider.
+- `link` - A link to another site.
+- `image` - A single image, which will be shown above post title.
+- `quote` - A quotation.
+- `video` - A single video, which can be any video from Youtube, Video or other video websites. Support URL or embed code. The video will be displayed above post title.
+- `audio` - An audio file, which can be any video from Youtube, Video or other video websites. The video will be displayed using a powerful HTML5 audio player – MediaElements.
+
+Each post format will have an icon near post title which tells you what post format is. Using post format in Noise lets you differentiate post from each other and make the blog page / single page looks more beautiful.
+
+[See blog page](http://themes.fitwp.com/noise/blog/) to see how post formats look.
+
+
+
+
+Setup Post Formats
+------------------
+
+When you edit a post, select a format you want to apply to that post on the **Format** meta box on the right:
+
+![formats](http://fitwp.github.io/docs/whisper/post-formats-box.png)
+
+When you choose a format, a corresponding meta box will appear **below** the content editor, here's the list of them:
+
+![formats](http://fitwp.github.io/docs/whisper/post-formats.png)
+
+All you need to do is just enter **all** information in the fields in these meta boxes. This information will be used to decorate the post.
 
 
 
@@ -702,6 +828,10 @@ Now go to your website admin area, then `Appearance > Widgets`, drag and drop **
 You also need to enter **Cache time** (2) - which is the time your tweets will be temporarily stored in WordPress cache, **Twitter username** (3) and **Number of tweets** (4).
 
 After filling all information, just click **Save**.
+
+
+
+
 
 
 
