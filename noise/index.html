@@ -60,7 +60,8 @@ Files Included
 The download package (`.zip`) that you get from ThemeForest contains the following files and folder:
 
 - `noise.zip`: main theme file that need to be uploaded to host to install Noise theme
-- `demo-content.xml`: demo content file, which contains all pages and posts from live preview website. It will help you to have a first look of how we use Noise theme
+- `noise.wordpress.yyyy-mm-dd.xml` (`yyyy-mm-dd` is the date of the file, which may be various with new versions of Noise): demo content file, which contains all pages and posts from live preview website. It will help you to have a first look of how we use Noise theme
+- `theme-options.txt`: theme option backup file. You'll need this to restore the default theme options that setup for demo website.
 - `docs.html`: theme documentation (this file)
 
 
@@ -124,13 +125,32 @@ If you are new to WordPress and have problems with setting up the theme you migh
 - Go to `Tools > Import`
 - Select **WordPress** from the list
 - If you haven't installed the **WordPress import plugin**, a popup window will appears and ask you to install it. Just click **Install Now**. When the installation progress is completed, click **Activate Plugin & Run Importer**. If you have installed this plugin, skip to next step.
-- Click **Browse** and select `demo-content.xml` file from the download package
+- Click **Browse** and select `noise.wordpress.yyyy-mm-dd.xml` (`yyyy-mm-dd` is the date of the file, which may be various with new versions of Noise) file from the download package
 - Click **Upload file and import**
 - When you are asked to import author, you can create new author or import to existing author. You also should check the checkbox **Download and import file attachments**.
 
 ![import](http://fitwp.github.io/docs/whisper/import.png)
 
 After completing all above steps, go to `Track`, `Artist`, `Album` to see imported data.
+
+
+
+
+Restore Theme Options
+---------------------
+
+To make your website looks exactly like the demo website, you need to import theme options.
+
+In the download package, there's a file called `theme-options.txt`. Please open it with a text editor (like Notepad in Windows) and copy the content.
+
+Then go to **Appearance \ Theme Options \ Backup and Restore**, you'll see this:
+
+![backup](http://fitwp.github.io/docs/noise/backup.png)
+
+Paste the content of `theme-options.txt` that you've just copied into the textarea **(1)**, then click button **(2)** to import the theme options.
+
+That's all!
+
 
 
 
@@ -176,9 +196,7 @@ That's all! Now you have the website up with all *basic* elements!
 Theme Options
 =============
 
-TODO: Change image
-
-![theme options](http://fitwp.github.io/docs/whisper/theme-options.png)
+![theme options](http://fitwp.github.io/docs/noise/theme-options.png)
 
 The Noise theme comes with unique, creative and easy-to-use Theme Options page. You can change all theme options in one place!
 
@@ -199,11 +217,12 @@ General
 
 This sections contains:
 
-- **(1)**: autoplay, allow the player auto plays music when website is loaded
-- **(2)**: favicon upload, allows you to upload favicon for you website
-- **(3)**: touch icon, allows you to upload icon for mobile devices and tablets
+- **(1)**: under construction mode. If you active this, your website will be put under construction mode. Note that, if you enable construction mode, you have to create a page use template "Under Construction" and set it as front page (in **Settings \ Reading**) to make this mode work correctly.
+- **(2)**: autoplay, allow the player auto plays music when website is loaded
+- **(3)**: favicon upload, allows you to upload favicon for you website
+- **(4)**: touch icon, allows you to upload icon for mobile devices and tablets
 
-After changing favicon and touch icon, click **Save Changes**.
+After changing settings, click **Save Changes**.
 
 
 
@@ -349,9 +368,8 @@ Opener is the screen you see when the preloader finished (100%). It mimics the "
 
 
 
-### Slider
+### Top Slider
 
-TODO: doi hinh vi thua option!
 ![slider](http://fitwp.github.io/docs/noise/slider.png)
 
 This is the configuration for the top slider. Note that the theme slides **text only**, not images. When you click on arrows of the slider, only texts are changed.
@@ -375,6 +393,7 @@ This section allows you to display **all** tracks of your website in a vertical 
 - **(2)**: section title.
 - **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
 - **(4)**: subtitle.
+- **(5)**: number of tracks you want to display on website. Please note that the larger number of tracks, the slower website!
 
 
 
@@ -399,7 +418,7 @@ This section displays beautiful Facebook like and Twitter follow button in the f
 
 This section displays popular tracks (based on votes) in the latest week and in the latest month. The options for this section is very simple:
 
-- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(1)**: enable/disable the section. If you don't like to display this section at all, you can disable it here.
 - **(2)**: section title.
 - **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
 - **(4)**: subtitle.
@@ -408,39 +427,41 @@ Please see the screenshot in **Latest Tracks** section to know where these texts
 
 
 
-### Testimonials
+### Quotes
 
 ![testimonials](http://fitwp.github.io/docs/noise/testimonials.png)
 
-This section allows you to display maximum 5 testimonials in the frontend. It has the following options:
+This section allows you to display maximum 5 quotes in the frontend. It has the following options:
 
-- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(1)**: enable/disable the section. If you don't like to display this section at all, you can disable it here.
 - **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
-- **(3)**: testimonial author name
-- **(4)**: testimonial content
+- **(3)**: author name
+- **(4)**: quote content
 
 The (3) and (4) is repeated the same for all testimonials.
 
 
 
 
-### Gallery
+### Media
 
 ![gallery](http://fitwp.github.io/docs/noise/gallery.png)
 
 This section displays photo and video galleries in the latest month. The options for this section is very simple:
 
-- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(1)**: enable/disable the section. If you don't like to display this section at all, you can disable it here.
 - **(2)**: section title.
 - **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
 - **(4)**: subtitle.
+- **(5)**: number of photo galleries to display.
+- **(6)**: number of video galleries to display
 
-Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+Please see the screenshot in **Latest Tracks** section to know where these texts **(2)**, **(3)**, **(4)** are displayed.
 
 
 
 
-### Tweets
+### Latest Tweets
 
 ![tweets](http://fitwp.github.io/docs/noise/tweets.png)
 
@@ -481,8 +502,9 @@ This section displays latest releases (album) in the latest month. The options f
 - **(2)**: section title.
 - **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
 - **(4)**: subtitle.
+- **(5)**: number of releases (albums) to be displayed. Enter `-1` to show all.
 
-Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+Please see the screenshot in **Latest Tracks** section to know where these texts **(2)**, **(3)**, **(4)** are displayed.
 
 
 
@@ -509,17 +531,18 @@ This section has the following options:
 
 This section displays upcoming and past events in the frontend. The options for this section is very simple:
 
-- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
+- **(1)**: enable/disable the section. If you don't like to display this section at all, you can disable it here.
 - **(2)**: section title.
 - **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
 - **(4)**: subtitle.
+- **(5)**: number of events to be displayed. Enter `-1` to show all.
 
-Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+Please see the screenshot in **Latest Tracks** section to know where these texts **(2)**, **(3)**, **(4)** are displayed.
 
 
 
 
-### Countdown
+### Special Event
 
 ![countdown](http://fitwp.github.io/docs/noise/countdown.png)
 
@@ -544,8 +567,9 @@ This section displays all artists in a vertical slider in the frontend. The opti
 - **(2)**: section title.
 - **(3)**: title suffix. This is a small letter after the section title. It's used for a better eye-catching effect.
 - **(4)**: subtitle.
+- **(5)**: number of artists to be displayed. Enter `-1` to show all.
 
-Please see the screenshot in **Latest Tracks** section to know where these texts are displayed.
+Please see the screenshot in **Latest Tracks** section to know where these texts **(2)**, **(3)**, **(4)** are displayed.
 
 
 
@@ -555,12 +579,13 @@ Please see the screenshot in **Latest Tracks** section to know where these texts
 
 This section displays a Google Maps and links to your social profiles in the frontent. It has the following options:
 
-- **(1)**: enable/disable the section. If you don't like the latest tracks section at all, you can disable it here.
-- **(2)**: background image. You can paste image URL here or upload it by clicking the green button.
-- **(3)**: title for the section. This title will have a special effect (push up) when you hover the Google Maps.
-- **(4)**: your address. This address will be used to displayed Google Maps.
-- **(5)**: zoom level for Google Maps.
-- **(6)**: list of links to your social profiles
+- **(1)**: enable/disable the section. If you don't like to display this section at all, you can disable it here.
+- **(2)**: contact section title.
+- **(3)**: contact information. You can put address, phone, fax, ... in this textarea box. Put each info in one line to display them beautifully.
+- **(4)**: contact email.
+- **(5)**: address. Used for Google Maps.
+- **(6)**: zoom level for Google Maps.
+- **(7)**: list of links to your social profiles
 
 
 
@@ -783,13 +808,18 @@ All you need to do is just enter **all** information in the fields in these meta
 Page Templates
 ==============
 
-Noise has one build-in page template for **Blog** that displays blog posts.
+Noise has 2 page templates:
+
+- **Blog**: displays blog posts.
+- **Under Construction**: display under construction page.
 
 When you edit a page, look at on the right, find **Page Attributes** meta box and select a template from the dropdown **Template**:
 
 ![page-templates](http://fitwp.github.io/docs/noise/page-templates.png)
 
 View the page to see result!
+
+Note: if you want to make the under construction page work (e.g. your site is under construction mode), after creating a page with page template **Under Construction**, please go to **General** tab in theme option and enable **Under Construction Mode**. After that, please go to **Settings \ Reading** and choose that page as a front page.
 
 
 
