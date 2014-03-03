@@ -59,10 +59,11 @@ Files Included
 
 The download package (`.zip`) that you get from ThemeForest contains the following files and folder:
 
-- `noise.zip`: main theme file that need to be uploaded to host to install Noise theme
-- `noise.wordpress.yyyy-mm-dd.xml` (`yyyy-mm-dd` is the date of the file, which may be various with new versions of Noise): demo content file, which contains all pages and posts from live preview website. It will help you to have a first look of how we use Noise theme
+- `noise-wp.zip`: main theme file that need to be uploaded to host to install Noise theme
+- `demo-content.xml`: demo content file, which contains all pages and posts from live preview website. It will help you to have a first look of how we use Noise theme
 - `theme-options.txt`: theme option backup file. You'll need this to restore the default theme options that setup for demo website.
 - `docs.html`: theme documentation (this file)
+- `PSD.zip`: zip file of all PSDs of Noise. You might want to use it to change the design
 
 
 
@@ -125,13 +126,17 @@ If you are new to WordPress and have problems with setting up the theme you migh
 - Go to `Tools > Import`
 - Select **WordPress** from the list
 - If you haven't installed the **WordPress import plugin**, a popup window will appears and ask you to install it. Just click **Install Now**. When the installation progress is completed, click **Activate Plugin & Run Importer**. If you have installed this plugin, skip to next step.
-- Click **Browse** and select `noise.wordpress.yyyy-mm-dd.xml` (`yyyy-mm-dd` is the date of the file, which may be various with new versions of Noise) file from the download package
+- Click **Browse** and select `demo-content.xml` file from the download package
 - Click **Upload file and import**
 - When you are asked to import author, you can create new author or import to existing author. You also should check the checkbox **Download and import file attachments**.
 
 ![import](http://fitwp.github.io/docs/whisper/import.png)
 
 After completing all above steps, go to `Track`, `Artist`, `Album` to see imported data.
+
+
+
+<div class="alert">**Important:** Due to license of images (http://www.shutterstock.com/), we have to remove images in distributed demo content and replace them with placeholers. You'll get a demo site looks like http://themes.fitwp.com/noise-demo/</div>
 
 
 
