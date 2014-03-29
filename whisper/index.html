@@ -36,7 +36,7 @@ Theme Information
 =================
 
 - **Theme Name:** Whisper WordPress Theme
-- **Version:** 1.0
+- **Version:** 1.1
 - **Theme URL:** [http://fitwp.com/themes/whisper/](http://fitwp.com/themes/whisper/)
 - **Author:** FitWP
 - **Author Website:** [FitWP](http://fitwp.com)
@@ -447,9 +447,17 @@ This sections contains:
 
 **(2)**: logo size. Specify logo size in **px** here. It will help you resize the logo to correct dimensions. By default, the good size is **201x39**.
 
+**(3)**: logo margin. Specify logo margin in **px** here. This is useful when you upload logo with different size than recommended. You can *move* logo a little, adjust space to make it look good.
+
 <div class="alert alert-info">You should **resize the logo to correct size** in Photoshop or any image editor before upload. It will keep your logo not resized and small size.</div>
 
-**(3)**: header scripts. Enter scripts or code you would like output to `&lt;head&gt;`. It can be:
+**(4)**: header sidebar position. Since version 1.1, you can add more content to the header right space(above or below main navigation). The content is added using widgets. This option allows you to put those widgets allow or below main navigation.
+
+<div class="alert alert-info">Please go to **Appearance \ Widgets** to add widgets to **Header Right** sidebar.</div>
+
+**(5)**: sticky header. This option allow you to make the header sticky, i.e. always stays on the top of the website when scrolling.
+
+**(6)**: header scripts. Enter scripts or code you would like output to `&lt;head&gt;`. It can be:
 
 - `<link>` tag for custom font (from Google Fonts maybe)
 - Any meta tag: to show the designer, copyright, etc. in meta tag
@@ -729,6 +737,7 @@ Whisper has some build-in page templates that can help you create special pages 
 - **Blog**: template to display blog posts
 - **Blox Boxes**: display blog posts in boxed style
 - **Contact**: template for contact page
+- **Contact Without Map**: template for contact page but without Google Maps
 - **Portfolio**: display portfolios
 - **Portfolio Hexagon**: display portfolios in creative hexagon style
 
@@ -736,7 +745,9 @@ When you edit a page, look at on the right, find **Page Attributes** meta box an
 
 ![page-templates](http://fitwp.github.io/docs/whisper/page-templates.png)
 
-View the page to see result!
+For **Blog**, **Blog Boxes**, **Portfolio**, **Portfolio Hexagon**, there's no configurations at all. After select page template from the meta box on the right, you just need to save the page and see it in action in the frontend.
+
+For **Contact** and **Contact Without Map**, there're some options as below.
 
 
 
@@ -747,19 +758,30 @@ There is a special case for contact page. When you select **Contact** from the *
 
 ![contact](http://fitwp.github.io/docs/whisper/contact.png)
 
-**(1)**: your contact email
+**(1)**: contact form shortcode. If you don't want to use default contact form (maybe you need more information from users like Country, Postcode, etc.), you can use a form plugin like Contact Form 7 or Ninja Forms, Gravity Forms. Those plugins provide shortcode for each form, and you just need to paste the shortcode into this field.
 
-**(2)**: your phone number
+**(2)**: your contact email
 
-**(3)**: your address. When you enter the address in the text field, you'll see a list of suggested address that Google Maps found. Simply select one of them, then the map will show the correct area.
+**(3)**: your phone number
+
+**(4)**: your address. When you enter the address in the text field, you'll see a list of suggested address that Google Maps found. Simply select one of them, then the map will show the correct area.
 
 If you don't see your address in the suggested list, click the **Find Address** button **(5)**, Google Maps will try its geolocation service to find your address on the map.
 
-**(4)**: when the map displays correct area, you can drag, zoom the map to find your exact location. Then **click** on the map to place a marker. You then can also drag and drop the marker to another location if you want.
+**(5)**: when the map displays correct area, you can drag, zoom the map to find your exact location. Then **click** on the map to place a marker. You then can also **drag and drop** the marker to another location if you want.
 
-**(5)**: search for your location in case you don't see list of suggested location from Google Maps.
+**(6)**: search for your location in case you don't see list of suggested location from Google Maps.
 
 When you entered all information, save the page and see it in the frontend.
+
+**Note**: You also should enter page content in the editor, this content will be display on the Contact Page as well.
+
+
+
+Contact Page Without Map
+------------------------
+
+This page template is similar to Contact Page above and has same options. The difference is there's no Google Maps on this page, and thus no options for maps.
 
 
 
@@ -1258,8 +1280,8 @@ Icon box is a way of displaying main information in a "box", which is usually us
 **Attributes:**
 
 ```
-[icon_box type="big" title="Configure" icon="serviceicon-tools"]Lorem ipsum dolor sit amet.[/icon_box]
-[icon_box type="hex" title="Support" icon="serviceicon-group"]Lorem ipsum dolor sit amet.[/icon_box]
+[icon_box type="big" url="http://google.com" title="Configure" icon="serviceicon-tools"]Lorem ipsum dolor sit amet.[/icon_box]
+[icon_box type="hex" url="http://google.com" title="Support" icon="serviceicon-group"]Lorem ipsum dolor sit amet.[/icon_box]
 [icon_box type="small" title="Design" icon="serviceicon-brush"]Lorem ipsum dolor sit amet.
 
 <a class="more-link" href="#">Continue reading <span>&gt;</span></a>[/icon_box]
@@ -1268,6 +1290,7 @@ Icon box is a way of displaying main information in a "box", which is usually us
 - `type`: `big`, `hex`, `small`, `simple`. Type of icon box. See demo to know how they look like.
 - `title`: icon box title (heading)
 - `icon`: icon class. Same as for icon shortcode above. Just pick from the popup, or manually enter it if you remember ;)
+- `url`: URL that the icon box links to. This parameter is **not** available for `small` type.
 
 <div class="alert">You always **can** enter HTML into shortcode content. In the 3rd example above, you see how we used a link with class `more-link` and a `span` tag inside it to make a beautiful readmore link.</div>
 
