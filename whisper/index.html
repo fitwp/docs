@@ -240,10 +240,11 @@ General
 
 This sections contains:
 
-- **(1)**: favicon upload, allows you to upload favicon for you website
-- **(2)**: touch icon, allows you to upload icon for mobile devices and tablets
-- **(3)**: show comments on pages, allows you to show/hide comments and comment form on pages
-- **(4)**: backup - restore, allows you to backup Whisper options and restore them later
+- **(1)**: this is the button which shows quick link to **Customizer**, a new feature that allows you to preview changes in real time. Please read more about Customizer in Customizer section in this docs.
+- **(2)**: favicon upload, allows you to upload favicon for you website
+- **(3)**: touch icon, allows you to upload icon for mobile devices and tablets
+- **(4)**: show comments on pages, allows you to show/hide comments and comment form on pages
+- **(5)**: backup - restore, allows you to backup Whisper options and restore them later
 
 
 
@@ -1461,12 +1462,14 @@ This shortcode display latest posts from your blog on your pages **in a grid**. 
 **Attributes:**
 
 ```
+[posts title_wrap="1" title="Blog Posts" number="3" category="company-news" content_limit="25" more="Continue Reading" total_columns="12"]
 [posts title_wrap="1" title="Blog Posts" number="3" content_limit="30" more="Read more" total_columns="9"]
 ```
 
 - `title_wrap`: show a title for the shortcode or not? Value can be empty (not display) or `1` (display).
 - `title`: the title of the shortcode. Used only when `title_wrap` is set to `1`
 - `number`: number of blog posts to show
+- `category`: **slug** (*not* name or ID) of category where do you want to get posts from. If empty, then posts will be get from all categories.
 - `content_limit`: number of words of post content will be displayed.
 - `more`: read more link text
 - `total_columns`: the total columns of all blog posts will display. This value is used to calculate the column of each post.
@@ -1522,7 +1525,7 @@ If you want to display 4 portfolios, each post is 3 columns, then total columns 
 
 **Popup:**
 
-![portfolios](http://fitwp.github.io/docs/whisper/portfolios.png)
+![portfolios](http://fitwp.github.io/docs/whisper/shortcode-portfolios.png)
 
 In the popup, click **Advanced Button** to show more options for the shortcode.
 
