@@ -26,6 +26,8 @@ nbproject
 _notes
 dwsync.xml
 
+node_modules
+
 # Komodo
 *.komodoproject
 .komodotools
