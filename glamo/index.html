@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +17,6 @@
 </div>
 
 <div id="content">
-
 
 
 Welcome
@@ -63,8 +61,11 @@ The download package (`.zip`) that you get from ThemeForest contains the followi
 - `demo-content.xml`: demo content file, which contains all pages and posts from live preview website. It will help you to have a first look of how we use Glamo theme
 - `demo-product.xml`: demo products file, which contains default products of Woocommerce
 - `docs.html`: theme documentation (this file)
-- `PSD.zip`: zip file of all PSDs of Glamo. You might want to use it to change the design
-- `ig-pagebuilder.zip`: zip file of IG PageBuilder full package.
+- `theme-options.txt`: theme option backup file. You'll need this to restore the default theme options that setup for demo website.
+- `Plugins`:
+	- `codecanyon-2751380-slider-revolution-responsive-wordpress-plugin.zip`: [Slider Revolution Responsive WordPress Plugin](http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380). Completed download package from Codecanyon.net. It's FREE for you to use with Glamo theme
+	- `wr-pagebuilder-documentation.html`: full documentation of wr-pagebuilder plugin
+	- `demo-slide.zip`: Slider for business, wedding, bakery page
 
 
 
@@ -115,7 +116,8 @@ Glamo theme **requires** follow plugins (all are free and available on WordPress
 Glamo theme **recommends** follow plugins:
 
 - [Contact Form 7](http://wordpress.org/plugins/contact-form-7/) plugin (free and available on WordPress.org)
-- [IG PageBuilder](http://codecanyon.net/item/ig-pagebuilder/8101848) plugin ($24 on CodeCanyon, included in download package)
+- WR PageBuilder plugin (included in download package)
+- [Slider Revolution Responsive WordPress](http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380) plugin ($18 on CodeCanyon, included in download package)
 
 Glamo is working perfectly with these plugins. It automatically adds more styles to them to make the design match the theme.
 
@@ -596,10 +598,27 @@ When you edit a page, you'll see this meta box below the content editor:
 
 This meta box contains 2 main parts:
 
+1. **Import slider**
 1. **Display Settings**
 1. **Layout Settings**
 
 Each parts contains some settings as shown in the screenshot above. Let's go through it:
+
+Import slider
+-------------------
+
+After setting up the page, you need to setup the slider for page like business, bakery, wedding to make it display the same as in live preview.
+
+The download package contains exported slider (Revolution Slider) that help you easier to create sliders. Following the steps below:
+
+**(1)**: Go to **Revolution Slider**.
+**(2)**: Click **Import Slider** button.
+**(3)**: When a popup appear, click **Browse** and select **demo-slide.zip** file.
+**(4)**: Click **Import Slider** button to start import the selected slider.
+
+![import slider](http://fitwp.github.io/docs/glamo/import-slider.png)
+
+
 
 
 
@@ -629,19 +648,20 @@ By default, default layout of pages is set in `Theme Options > Design > Layout`,
 
 
 
-
 Building Homepage
 ================
 
-There are 2 ways to build a homepage in Glamo: use Homepage template which is provided by Glamo theme or use Pagebuilder plugins.
+There are 3 ways to build a homepage in Glamo: use Homepage template which is provided by Glamo theme or use WR Pagebuilder plugin or use Visual  Composer Plugin .
 
-This section will show you how we build our home page using page template `Homepage` and using IG Pagebuilder plugin.
+This section will show you how we build our home page using page template `Homepage`, using WR Pagebuilder plugin and using Visual  Composer.
 
 
 
 
 Using Homepage template
 -----------------------
+
+We use Homepage template to build Demo 1.
 
 ![homepage](http://fitwp.github.io/docs/glamo/home.png)
 
@@ -730,32 +750,39 @@ You can drag sections to change their order. Now let's go throught each section 
 
 
 
-Using IG Pagebuilder
+Using WR Pagebuilder
 --------------------
 
-Glamo supports building pages by using page builder plugins: **Visual  Composer** and **IG PageBuilder**.
+Glamo supports building pages by using page builder plugins: **Visual  Composer** and **WR PageBuilder**.
 
-Here we will show you how to use **IG PageBuilder** which included in Glamo theme to build a page.
 
-<div class="alert alert-success">Although Glamo supports **both** IG Pagebuilder and Visual Composer plugins, but using them is **NOT** required. You still can use Glamo for a dedicated shop and it functions just well. But if you need more fancy pages or write beautiful blog posts, using page builder plugins is a good choice.</div>
+We use this plugin to build demo 2 "Mobile". You can download sample data of Glamo Mobile demo here: [http://docs.fitwp.com/glamo/demo-mobile.zip](http://docs.fitwp.com/glamo/demo-mobile.zip).
 
-<div class="alert alert-warning">Visual Composer is **not** included in Glamo. To use Visual Composer, you have to [purchase the plugin at CodeCanyon](http://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431?ref=fitwp).</div>
+If you want to build home page like "Mobile" demo, you should import demo-content-mobile.xml from demo-mobile.zip instead of demo-content.xml. After successful importing, you go to Pages, chose `Homepage` to edit. Remember to set that page as front page in `Setting -> Reading`.
+
+We include a export of slider that we use in live demo "Mobile" in `demo-mobile.zip` file, you can import it in `Revolution Slider` in admin area.
+
+
+<div class="alert alert-success">Although Glamo supports **both** WR Pagebuilder and Visual Composer plugins, but using them is **NOT** required. You still can use Glamo for a dedicated shop and it functions just well. But if you need more fancy pages or write beautiful blog posts, using page builder plugins is a good choice.</div>
+
+Here we will show you how to use **WP PageBuilder** which included in Glamo theme to build a page.
+
 
 
 ### Open page builder
 
-![open ig pagebuilder](http://fitwp.github.io/docs/glamo/ig-pagebuilder-open.png)
+![open wr pagebuilder](http://fitwp.github.io/docs/glamo/ig-pagebuilder-open.png)
 
 When add or edit pages, you will see 2 tabs `Classic Editor` and `Page Builder` right bellow page title, click to `Page Builder` to open page builder screen add start adding content.
 
-**Note:** Before adding elements to page, you should know that IG PageBuilder organize content in a grid using rows and columns. Each row can contain some columns and each column can contain some elements.
+**Note:** Before adding elements to page, you should know that WR PageBuilder organize content in a grid using rows and columns. Each row can contain some columns and each column can contain some elements.
 
 Now let's see how to add rows, columns and elements to page content.
 
 
 ### Add Row
 
-![ig pagebuilder add row](http://fitwp.github.io/docs/glamo/ig-pagebuilder-add-row.png)
+![WR pagebuilder add row](http://fitwp.github.io/docs/glamo/ig-pagebuilder-add-row.png)
 
 **(1)**: Click the **Add Row** button to add new row.
 
@@ -765,7 +792,7 @@ Now let's see how to add rows, columns and elements to page content.
 
 **(4)**: Edit row. When you click the Edit Row icon (above delete row icon), a modal box will appear with options to edit row, let's see what it is:
 
-![ig pagebuilder edit row](http://fitwp.github.io/docs/glamo/ig-pagebuilder-row-options.png)
+![wr pagebuilder edit row](http://fitwp.github.io/docs/glamo/ig-pagebuilder-row-options.png)
 
 - **Width**: select the width of row, boxed or full width. By default it is boxed.
 - **Background**: select background type of row: none, solid color, gradient, pattern or image, then set it up.
@@ -799,10 +826,24 @@ Inside each row, you will see Add Element button at bottom, just click to it, a 
 Select element you want to add by clicking it, a new modal box will appear. It allows you to setup the element with many options. After done, click **Save** button to add the configured element into column.
 
 
-**Note:** To know in details how to setup/configure each elements, please see the IG PageBuilder documentation from this link:
+**Note:** To know in details how to setup/configure each elements, please see the WR PageBuilder documentation from included pakage or use online documentation [here](http://www.woorockets.com/docs/wr-pagebuilder-user-manual/).
 
-[http://www.innogears.com/docs/ig-page-builder/](http://www.innogears.com/docs/ig-page-builder/)
 
+Using Visual Composer
+--------------------
+
+<div class="alert alert-warning">**Note:** Visual Composer is **not** included in Glamo. To use Visual Composer, you have to [purchase the plugin at CodeCanyon](http://codecanyon.net/item/visual-composer-page-builder-for-wordpress/242431?ref=fitwp).</div>
+
+
+We use this plugin to build demo 3 "Restaurant".  You can download sample data of Glamo Restaurant demo here: [http://docs.fitwp.com/glamo/demo-restaurant.zip](http://docs.fitwp.com/glamo/demo-restaurant.zip).
+
+If you want to build home page like it, you should import demo-content-restaurant.xml instead of demo-content.xml. After successful importing, you go to Pages, chose `Homepage` to edit. Remember to set that page as front page in `Setting -> Reading`.
+
+You can see the detail how to use Visual Composer in documentation which included in plugin package when you buy it or watch tutorial videos [here](http://vc.wpbakery.com/video-academy/).
+
+We include a export of slider that we use in live demo "Restaurant" in `demo-restaurant.zip` file, you can import it in `Revolution Slider` in admin area.
+
+<div class="alert alert-warning">**Important:** At this time, plugin WR Pagebuilder is not competible with Visual Composer, so please deactive WR Pagebuilder if you want to use Visual Composer.</div>
 
 
 
