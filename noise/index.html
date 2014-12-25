@@ -103,7 +103,7 @@ Install plugins
 
 After installing Noise, you'll see a notification in the top of the page that says the theme needs some plugins to function properly.
 
-Noise theme **requires** the [Meta Box](http://wordpress.org/plugins/meta-box/) plugin (free and available on WordPress.org) and **recommends** [MailPoet Newsletters (formerly Wysija)](http://wordpress.org/plugins/wysija-newsletters/) (free and available on WordPress.org).
+Noise theme **requires** the [Meta Box](http://wordpress.org/plugins/meta-box/) plugin (free and available on WordPress.org) and **recommends** [MailPoet Newsletters (formerly Wysija)](http://wordpress.org/plugins/wysija-newsletters/) (free and available on WordPress.org) and [WR PageBuilder plugin](https://wordpress.org/plugins/wr-pagebuilder/) (free and available on WordPress.org).
 
 Noise is working perfectly with these plugins. It automatically adds more styles to them to make the design match the theme.
 
@@ -991,11 +991,12 @@ All you need to do is just enter **all** information in the fields in these meta
 Page Templates
 ==============
 
-Noise has 3 page templates:
+Noise has 4 page templates:
 
 - **Onepage**: displays one page layout (same as demo)
 - **Blog**: displays blog posts.
 - **Under Construction**: display under construction page.
+- **Full Width Page**: build pages with full width.
 
 When you edit a page, look at on the right, find **Page Attributes** meta box and select a template from the dropdown **Template**:
 
@@ -1016,6 +1017,69 @@ This page template needs following information:
 - **(3)**: end date, i.e. when the website is done.
 - **(4)**: background image. This allow you to upload or select any image in Media Library as background for construction page.
 
+
+For **Full Width Template** page template, you can combine with WR PageBuilder to create many kind of defferent pages.
+
+Here we will show you how to use WP PageBuilder to build a page.
+
+**Open page builder**
+
+![open wr pagebuilder](http://fitwp.github.io/docs/glamo/ig-pagebuilder-open.png)
+
+When add or edit pages, you will see 2 tabs `Classic Editor` and `Page Builder` right bellow page title, click to `Page Builder` to open page builder screen add start adding content.
+
+**Note:** Before adding elements to page, you should know that WR PageBuilder organize content in a grid using rows and columns. Each row can contain some columns and each column can contain some elements.
+
+Now let's see how to add rows, columns and elements to page content.
+
+
+** Add Row **
+
+![WR pagebuilder add row](http://fitwp.github.io/docs/glamo/ig-pagebuilder-add-row.png)
+
+**(1)**: Click the **Add Row** button to add new row.
+
+**(2)**: You can drag and drop a row in vertical direction to change its order.
+
+**(3)**: You can delete a row by clicking the recycle icon on the right side of the row. If that row contains elements, a alert box will appear and ask you to confirm that you want to delete that row and all elements inside it.
+
+**(4)**: Edit row. When you click the Edit Row icon (above delete row icon), a modal box will appear with options to edit row, let's see what it is:
+
+![wr pagebuilder edit row](http://fitwp.github.io/docs/glamo/ig-pagebuilder-row-options.png)
+
+- **Width**: select the width of row, boxed or full width. By default it is boxed.
+- **Background**: select background type of row: none, solid color, gradient, pattern or image, then set it up.
+- **Border**: specify row border. It contain border with, border type and border color.
+- **Padding**: edit padding of row in **px**. By default all values are set to 10px
+- **CSS Class**: add css class to row. It is useful when you want to add special style to a row by using `Custom CSS` feature in `Theme Options`.
+- **ID**: Set css id to row. As same purpose as **CSS Class**, you can add style to a row by adding ID to it.
+
+
+** Add Columns **
+
+![ig pagebuilder add columns](http://fitwp.github.io/docs/glamo/ig-pagebuilder-add-columns.png)
+
+There are 2 way to add columns into a row: add them manually or user pre-defined layout.
+
+**(1)**: add columns manually by clicking the **Add Column** button on the right side of row. You can add maximum 12 columns.
+
+**(2)**: you can resize column by clicking to 3 dots icon between columns and drag it to left or right side.
+
+**(3)**: add column by using pre-defined layout. When you hover your mouse over the Add Row button, a list of pre-defined layout will appear, just click to a layout and you have a new row with columns inside.
+
+
+** Add Elements **
+
+![ig pagebuilder add elements](http://fitwp.github.io/docs/glamo/ig-pagebuilder-add-elements.png)
+
+Inside each row, you will see Add Element button at bottom, just click to it, a modal box appear, it contain all avaiable elements that supported by IG Pagebuilder plugin.
+
+![ig pagebuilder elements](http://fitwp.github.io/docs/glamo/ig-pagebuilder-elements.png)
+
+Select element you want to add by clicking it, a new modal box will appear. It allows you to setup the element with many options. After done, click **Save** button to add the configured element into column.
+
+
+**Note:** To know in details how to setup/configure each elements, please use online documentation [here](http://www.woorockets.com/docs/wr-pagebuilder-user-manual/).
 
 
 
