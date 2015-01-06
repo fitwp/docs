@@ -449,9 +449,9 @@ This sections contains:
 
 **(7)**: sticky header. This option allow you to make the header sticky, i.e. always stays on the top of the website when scrolling.
 
-**(8)**: Show Shop Cart Icon. This option allow you show a shop cart icon on header. This option effects only when WooCommerce plugin is installed.
+**(8)**: show shop cart icon. This option allow you show a shop cart icon on header. This option effects only when WooCommerce plugin is installed.
 
-**(9)**: Show Search Icon. This option  allow you show search icon.
+**(9)**: show search icon. This option  allow you show search icon.
 
 **(10)**: header scripts. Enter scripts or code you would like output to `&lt;head&gt;`. It can be:
 
@@ -535,9 +535,55 @@ Default value is **55 words**.
 Shop
 ------
 
-This section give you options to customize footer area on your website.
+This section give you options to customize shop page on your website.
 
-![footer](http://fitwp.github.io/docs/galaticos/shop.png)
+![shop](http://fitwp.github.io/docs/galaticos/shop.png)
+
+**(1)**: Default product image. This image will be used when product has no image to display as thumbnail.
+**(2)**: Default Products View. Select the default view for products
+**(3)**: Number of products. Set default number of products to display in the shop page.
+**(4)**: Number of products. Set default number of products to display in the shop page
+**(5)**: Show featured badge. Display a badge for featured products.If you choose show featured badge, on the shop page will display like this:
+
+![featured badge](http://fitwp.github.io/docs/galaticos/featured-badge.png)
+
+**(6)**: Show new badge. Display a badge for new products.
+**(7)**: Badge display duration. The number of days a product will be set as new product, since the published date.
+
+
+Portfolio
+------
+
+This section give you options to customize portfolio page on your website.
+
+![portfolio](http://fitwp.github.io/docs/galaticos/portfolio.png)
+
+**(1)**: portfolio category view. Select the default view for Portfolio category page.
+
+**(2)**: number of projects. Set number of Portfolio projects to display in the Portfolio category page
+
+**(3)**: portfolio single view. Select the default view for Portfolio single page
+
+
+Testimonials
+------
+
+This section give you 1 option to customize testimonials page on your website.
+
+![testimonial](http://fitwp.github.io/docs/galaticos/testimonial.png)
+
+**(1)**: Select background image for testimonials page.
+
+
+404 page
+------
+
+This section give you 1 option to customize 404 page on your website.
+
+![404 page](http://fitwp.github.io/docs/galaticos/testimonial.png)
+
+**(1)**: Select background image for 404 page page.
+
 
 
 Footer
@@ -545,11 +591,16 @@ Footer
 
 This section give you options to customize footer area on your website.
 
-![footer](http://fitwp.github.io/docs/whisper/footer.png)
+![footer](http://fitwp.github.io/docs/galaticos/footer.png)
+![footer-frontend](http://fitwp.github.io/docs/galaticos/footer-frontend.png)
 
-**(1)**: number of columns in footer. It also is the number of footer sidebars (widget areas). Default is **4**.
+**(1)**: footer ads. Allow Html and shortcode
 
-**(2)**: copyright text. You can enter text, HTML and **shortcodes** here. To make you easier to display copyright text, Whisper has default shortcodes that you can enter here:
+**(2)**: footer widgets. Enable to display widgets in footer.
+
+**(3)**: number of columns in footer. It also is the number of footer sidebars (widget areas). Default is **4**.
+
+**(4)**: copyright text. You can enter text, HTML and **shortcodes** here. To make you easier to display copyright text, Whisper has default shortcodes that you can enter here:
 
 - `[year]`: display current year
 - `[site_link]`: display link to your website with text is the website title. For example, if you have a website at `http://example.com` and title `Example`, this will display a link like this:
@@ -568,9 +619,7 @@ This section give you options to customize footer area on your website.
 
 The default value for copyright text is **Copyright &copy;`[year]` `[site_link]`. All rights reserved.**.
 
-**(3)**: contact information. Specify phone number and email here.
-
-**(4)**: footer scripts. Enter scripts or code you would like output before `&lt;/body&gt;`. It can be Google Analytics code or any Javascript code.
+**(5)**: footer scripts. Enter scripts or code you would like output before `&lt;/body&gt;`. It can be Google Analytics code or any Javascript code.
 
 
 
@@ -583,9 +632,9 @@ Customizer is a feature of WordPress that allows us to tweak a theme's settings 
 
 To start with Customizer, please go to **Appearance \ Customize**, you'll see the following screen:
 
-![customizer](http://fitwp.github.io/docs/whisper/customizer.png)
+![customizer](http://fitwp.github.io/docs/galaticos/customizer.png)
 
-**(1)**: there are some sections that you can change and live preview it. These sections have `[Whisper]` in their title.
+**(1)**: there are some sections that you can change and live preview it. These sections have `[Galaticos]` in their title.
 
 **(2)**: click on each section title will show options for that section. These options are the same as in Theme Options, so it's easy to understand (please refer to Theme Options in this documentation to know exactly each detail).
 
@@ -604,12 +653,12 @@ We've seen how to change featured title area, layout style, sidebar layout for w
 
 When you edit a page or a post, you'll see this meta box below the content editor:
 
-![display settings](http://fitwp.github.io/docs/whisper/display-settings-page.png)
+![display settings](http://fitwp.github.io/docs/galaticos/display-settings-page.png)
 
 This meta box contains 3 main parts:
 
 1. **Featured Title Area Settings**
-1. **Slider Settings**
+1. **Breadcrumb**
 1. **Custom Layout Settings**
 
 Each parts contains some settings as shown in the screenshot above. Let's go through it:
@@ -621,43 +670,35 @@ Featured Title Area
 
 This is the featured title area which is displayed in the frontend
 
-![featured title area](http://fitwp.github.io/docs/whisper/featured-title-area.png)
+![featured title area](http://fitwp.github.io/docs/galaticos/featured-title-area.png)
 
 where:
 
-- **(1)**: Page title
-- **(2)**: Page subtitle
-- **(3)**: Background image
-- **(4)**: Breadcrumbs
+- **(1)**: Breadcrumbs
+- **(2)**: Background image
+- **(3)**: Page title
+- **(4)**: Page subtitle
 
 Let's go back to the page display settings above, we have these settings:
 
 **(1)**: hide featured title area. Check this box if you want to hide the featured title area. This option *should* be used in special pages like homepage.
 
-**(2)**: custom title. Enter the custom page title here. By default Whisper displays post/page title, but you can customize the real title shown in Featured Title Area. It is useful when you have a very long title.
+**(2)**: hide text. Allow to hide both title and subtile.
 
-**(3)**: subtitle. Enter subtitle for page here. Leave this empty if you don't want to show subtitle.
+**(3)**: custom title. Enter the custom page title here. By default Whisper displays post/page title, but you can customize the real title shown in Featured Title Area. It is useful when you have a very long title.
 
-**(4)**: custom background. If you choose an image, it will be used as the background for Featured Tittle Area. If you do not, Whisper will use default image set in **Theme Options**.
+**(4)**: subtitle. Enter subtitle for page here. Leave this empty if you don't want to show subtitle.
+
+**(5)**: custom background. If you choose an image, it will be used as the background for Featured Tittle Area. If you do not, Whisper will use default image set in **Theme Options**.
 
 **(5)**: hide breadcrumbs. The theme already has settings to show/hide breadcrumbs side-wide. But if you want to hide breadcrumbs for a specific post/page, you can select this option.
 
 
 
-Slider
+Breadcrumb
 ------
 
-This part contains only 1 input field **(6)**, where you can enter **shortcode for slider**. The slider will be shown below featured title area. See [this page](http://themes.fitwp.com/whisper/features/custom-slider/) for a demo.
-
-Whisper supports slider plugin which has shortcode **only**. These are some plugins tested with Whisper:
-
-- [Revolution Slider](http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380?rel=fitwp) (premium)
-- [Meteor Sliders](http://wordpress.org/extend/plugins/meteor-slides/) (free)
-- [Soliloquy Slider](http://wordpress.org/plugins/soliloquy-lite/) (free)
-
-<div class="alert alert-success">When you buy Whisper, you also **get a free copy of Revolution Slider plugin** – a very popular plugin at CodeCanyon.</div>
-
-<div class="alert">Note: For sliders that does not support full-width, you should switch site layout style or change page layout style to boxed.</div>
+This part contains only 1 input field **(6)**, hide breadcrumbs. The theme already has settings to show/hide breadcrumbs side-wide. But if you want to hide breadcrumbs for a specific post/page, you can select this option.
 
 
 
@@ -684,19 +725,17 @@ When you add or edit a portfolio, you need to fill in some required information 
 - **Portfolio Categories**: portfolio categories
 - **Featured Image**: portfolio featured image
 
-![portfolio](http://fitwp.github.io/docs/whisper/portfolio.png)
+![portfolio](http://fitwp.github.io/docs/galaticos/portfolio-setting.png)
 
 In the **(1)** meta box, you have to:
 
-- Select which type of display the portfolio will be. See how they're different here: [default](http://themes.fitwp.com/whisper/portfolio/creativity-in-numbers/) and [simple](http://themes.fitwp.com/whisper/portfolio/light-house/).
 - Select or upload portfolio images, these images will be used in the portfolio slider
-- Project URL
-- Testimonial: required only if you select display type `simple`.
-- Testimonial Author: required only if you select display type `simple`.
+- Clients: name of clients
+- Skills
 
-In the **(2)** meta box, you can select or create new categories for portfolio. Note that the categories will be used to **filter** portfolios in **Portfolios** archive page (e.g. page with template **Portfolios** or **Portfolios Hexagon**).
+In the **(Portfolio categories)** meta box, you can select or create new categories for portfolio. Note that the categories will be used to **filter** portfolios in **Portfolios** archive page.
 
-In the **(3)** meta box, simply select featured image for the portfolio as a normal post. You can choose the same image that you have uploaded in **(1)** meta box or a new one. This image will be used to display as portfolio thumbnail.
+In the **(2)** meta box, simply select featured image for the portfolio as a normal post. You can choose the same image that you have uploaded in **(1)** meta box or a new one. This image will be used to display as portfolio thumbnail.
 
 
 Post Formats
