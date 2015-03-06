@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Galaticos - Responsive WordPress Ecommerce Theme</title>
+<title>Galaticos - Multipurpose Wordpress Theme</title>
 <meta name="description" content="Galaticos is a premium WordPress theme for businesses and entrepreneurs. Built with HTML5 and CSS3 (LESS), Galaticos is 100% responsive and easy to customize via powerful options">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
 <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 <style>
 	body {
@@ -20,59 +20,96 @@
 	a {
 		transition: 0.5s;
 		color: #444;
-		text-transform: uppercase;
 		text-align: center;
 		text-decoration: none;
 	}
 
 	a:hover {
 		text-decoration: none;
-		color: #444;
+		color: #ffda00;
+	}
+
+	a:hover img  {
+		-moz-transform: translateY(-10px);
+		-webkit-transform: translateY(-10px);
+		-o-transform: translateY(-10px);
+		-ms-transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
 
 	img {
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
-		-ms-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		transition: all 0.5s ease;
-		-webkit-box-shadow: 0 0 6px 0px #ccc;
-		box-shadow: 0 0 6px 0px #ccc;
-	}
-
-	a:hover img {
-		-moz-transform: translateX(0px) translateY(-15px);
-		-webkit-transform: translateX(0px) translateY(-15px);
-		-o-transform: translateX(0px) translateY(-15px);
-		-ms-transform: translateX(0px) translateY(-15px);
-		transform: translateX(0px) translateY(-15px);
+		transition: 0.5s;
+		max-width: 100%;
 	}
 
 	h2 {
 		margin: 30px 0;
+		font-size: 18px;
+		text-transform: uppercase;
 	}
 
-	.demo-col {
-		padding: 50px 0;
+	.demo-row {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	header {
+		padding: 80px;
+		background: #f5f5f5 url(bg.jpg) no-repeat center top;
+		background-size: cover;
+		color: #fff;
+	}
+
+	header h1 {
+		font-size: 24px;
+		font-weight: 300;
+		color: #fff;
+		margin-top: 50px;
 	}
 </style>
 </head>
 
 <body>
-	<div class="container-fluid">
+	<header class="container-fluid">
 		<div class="row">
-			<div class="demo-col col-xs-12 col-sm-6" style="background-color: #f5f5f5">
+			<img src="logo.png" alt="Galaticos - Wordpress Theme">
+
+			<h1>Multipurpose Wordpress Theme</h1>
+		</div>
+	</header>
+	<div class="container-fluid">
+		<div class="row demo-row">
+			<div class="col-xs-12 col-sm-4">
 				<a href="http://demo2.fitwp.com/galaticos/">
-					<h2>Corporate Version</h2>
-					<img src="http://docs.fitwp.com/galaticos/demo1.png" alt="Galaticos Corporate Demo">
+					<img src="demo-coporate.png" alt="Galaticos Corporate Demo">
+					<h2>Corporate Demo</h2>
 				</a>
 			</div>
 
-			<div class="demo-col col-xs-12 col-sm-6">
-				<a href="http://demo2.fitwp.com/galaticos2/">
-					<h2>Business Version</h2>
-					<img src="http://docs.fitwp.com/galaticos/demo2.png" alt="Galaticos Corporate Demo">
+			<div class="col-xs-12 col-sm-4">
+				<a href="http://demo2.fitwp.com/galaticos3/">
+					<img src="demo-shop.png" alt="Galaticos Shop Demo">
+					<h2>Shop Demo</h2>
 				</a>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<a href="http://demo2.fitwp.com/galaticos4/">
+					<img src="demo-travel.png" alt="Galaticos Travel Demo">
+					<h2>Travel Demo</h2>
+				</a>
+			</div>
+		</div>
+
+		<div class="row demo-row">
+			<div class="col-xs-12 col-sm-4 col-sm-offset-2">
+				<a href="http://demo2.fitwp.com/galaticos5/">
+					<img src="demo-personal.png" alt="Galaticos Corporate Demo">
+					<h2>Personal Demo</h2>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<img src="demo-more.png" alt="Galaticos Corporate Demo">
+				<h2>Coming Soon</h2>
 			</div>
 		</div>
 	</div>
