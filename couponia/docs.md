@@ -38,7 +38,6 @@ The download package (`.zip`) that you get from ThemeForest contains the followi
 - `couponia.zip`: main theme file that need to be uploaded to host to install Couponia theme
 - `demo-content.xml`: demo content file, which contains all pages and posts from live preview website. It will help you to have a first look of how we use Couponia theme
 - `theme-options.txt`: theme option backup file. You'll need this to restore the default theme options that setup for demo website.
-- `PSD`: this folder conatains PSD files of Couponia design
 - `Documentation`: this folder the offline version of the theme's documentation
 - `docs.html`: the online version of this documentation
 
@@ -189,7 +188,7 @@ Couponia theme has 10 widget areas (sidebars) by default:
 - **Blog Sidebar:** main website sidebar which will be displayed on all blog posts, archive pages, etc.
 - **Page Sidebar:** will be displayed on all WordPress pages.
 - **Shop Sidebar:** will be displayed on all WooCommerce pages: Products, Product category, Single Product, etc.
-- **Deals Sidebar:** will be displayed on pages which use **Deals** template.   
+- **Deals Sidebar:** will be displayed on pages which use **Deals** template.
 - **Home Sidebar:** will be displayed on **Homepage** template
 - **Header Sidebar:** will display on right/left side of header when you select header's layout is **Layout 2** and logo position is not center in the Theme Options panel.
 - **Footer Sidebars:** there are 4 default sidebars for footer, each sidebar is a column in the footer. You can change number of columns in footer in Theme Options page (in that case number of footer sidebars will increased or decreased acccordingly).
@@ -412,11 +411,11 @@ This sections contains:
 - **(5)**: select header's layout. You can choose either **Layout 1** or **Layout 2**.
 
  ![Header layout 1](images/header-layout1.png)
- 
+
  <div class="text-center">Header Layout 1</div>
- 
+
  ![Header layout 1](images/header-layout2.png)
- 
+
  <div class="text-center">Header Layout 2</div>
 
 - **(6)**: Logo position. Select position of the logo
